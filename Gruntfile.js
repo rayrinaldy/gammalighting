@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                 tasks: ['pug']
             },
             sass: {
-                files: 'app/scss/*.scss',
+                files: 'views/scss/*.scss',
                 tasks: ['sass'],
                 options: {
                     debounceDelay: 250,
