@@ -1,0 +1,32 @@
+{
+  "name": "gammalighting",
+  "version": "1.0.0",
+  "description": "Gamma Lighting Creation for Adit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayrinaldy/gammalighting.git"
+  },
+  "author": "Ray Rinaldy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayrinaldy/gammalighting/issues"
+  },
+  "homepage": "https://github.com/rayrinaldy/gammalighting#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "grunt-express-server": "^0.5.3",
+    "pug": "^2.0.0-beta.12"
+  }
+}
