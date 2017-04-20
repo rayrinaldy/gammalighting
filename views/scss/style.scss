@@ -41,4 +41,66 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background: #000;
 }
+
+#fullpage{
+    position: relative;
+    background: #000;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    .lb-images {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        .lb-slides {
+            max-width: 100%;
+            max-height: 100%;
+            .img-fill {
+                width: 100vw;
+                height: 100vh;
+                display: block;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: block;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin: 0 auto;
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slick-dots{
+    bottom: 7px;
+    li{
+        button{
+            &:before{
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// @for $i from 1 through 12 {
+//     #section#{$i}{
+//         background-image: url('../images/img#{$i}.png');
+//         background-repeat: no-repeat;
+//         background-position: 50% 50%;
+//          -webkit-background-size: cover;
+//         -moz-background-size: cover;
+//         -o-background-size: cover;
+//         background-size: cover;
+//     }
+// }

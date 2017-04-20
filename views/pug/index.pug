@@ -1,59 +1,30 @@
-doctype html
-html.no-js(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(name='description', content='Personal Resume & Portfolio about Ray Rinaldy')
-		meta(name='keywords', content='ray rinaldy, resume, portfolio, cv')
-		meta(name='author', content='Ray Rinaldy')
+extend layout
 
-		//- Schema.org markup for Google+
-		meta(itemprop='name', content='Gamma Lighting Creation')
-		meta(itemprop='description', content='Gamma Lighting Creation')
-		meta(itemprop='image', content='https://rayrinaldy.github.io/ray-website/images/1.jpg')
+block css
+	link(rel='stylesheet', type='text/css', media='screen', href='css/bootstrap.css')
+	link(rel='stylesheet', type='text/css', href='css/font-awesome.css')
+	link(rel='stylesheet', type='text/css', href='css/slick.css')
+	link(rel='stylesheet', type='text/css', href='css/slick-theme.css')
+	link(rel='stylesheet', type='text/css', media='screen', href='css/style.css')
 
-		//- Twitter Card data
-		meta(name='twitter:card', content='summary_large_image')
-		meta(name='twitter:site', content='@ray_r9')
-		meta(name='twitter:title', content='Gamma Lighting Creation')
-		meta(name='twitter:description', content='Gamma Lighting Creation')
-		meta(name='twitter:creator', content='@ray_r9')
+block js
+	script(src='https://code.jquery.com/jquery-3.2.1.js')
+	script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js')
+	script(src="js/bootstrap.min.js")
+	script(src="js/slick.js")
+	script(src="js/script.js")
 
-		//- Twitter summary card with large image must be at least 280x150px
-		meta(name='twitter:image:src', content='https://rayrinaldy.github.io/ray-website/images/1.jpg')
+block content
+	#fullpage
 
-		//- Open Graph data
-		meta(property='og:title', content='Gamma Lighting Creation')
-		meta(property='og:type', content='article')
-		meta(property='og:url', content='http://www.rayrinaldy.com/')
-		meta(property='og:image', content='https://rayrinaldy.github.io/ray-website/images/1.jpg')
-		meta(property='og:description', content='Gamma Lighting Creation')
-		meta(property='og:site_name', content='Gamma Lighting Creation')
-		meta(property='article:published_time', content='2017-01-04T05:59:00+08:00')
-		meta(property='article:modified_time', content='2017-01-04T19:08:47+08:00')
-		meta(property='article:section', content='Article Section')
-		meta(property='article:tag', content='Article Tag')
-		meta(property='fb:admins', content='1605949105')
+		//- #main-content
+		//- each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+		//- 	.image-wrapper
+		//- 		img(src="images/img" + val + ".png", alt="")
 
-		meta(name='theme-color', content='#bae1ff')
-
-		link(rel='shortcut icon', href='images/favicon.ico')
-		title Gamma Lighting Creation
-
-		link(rel='stylesheet', type='text/css', media='screen', href='public/css/bootstrap.css')
-		link(rel='stylesheet', type='text/css', href='public/css/font-awesome.css')
-		link(rel='stylesheet', type='text/css', media='screen', href='public/css/style.css')
-
-		link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
-
-	body
-		#main-content
-			.container-fluid
-				.row
-					.col-xs-12
-						h1 Adit si Ganteng
-
-		script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
-		script(src="public/js/bootstrap.min.js")
-		script(src="public/js/script.js")
+		.lightbox
+			.lb-images
+				.lb-slides
+					each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+						.img-fill
+							img(src="images/img" + val + ".png", alt="")

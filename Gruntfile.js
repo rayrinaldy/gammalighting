@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: 'views/pug/',
-                    src: ['*.pug'],
+                    src: ['index.pug'],
                     dest: './',
                     ext: '.html',
                 }]
@@ -54,6 +54,7 @@ module.exports = function(grunt) {
                 tasks: ['sass'],
                 options: {
                     debounceDelay: 250,
+                    livereload: false
                 },
             },
             js: {

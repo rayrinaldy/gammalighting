@@ -1,2 +1,39 @@
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background: #000; }
+
+#fullpage {
+  position: relative;
+  background: #000; }
+
+.lightbox {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; }
+  .lightbox .lb-images {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative; }
+    .lightbox .lb-images .lb-slides {
+      max-width: 100%;
+      max-height: 100%; }
+      .lightbox .lb-images .lb-slides .img-fill {
+        width: 100vw;
+        height: 100vh;
+        display: block; }
+        .lightbox .lb-images .lb-slides .img-fill img {
+          max-width: 100%;
+          max-height: 100%;
+          display: block;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          margin: 0 auto; }
+          .lightbox .lb-images .lb-slides .img-fill img:focus {
+            outline: 0; }
+
+.slick-dots {
+  bottom: 7px; }
+  .slick-dots li button:before {
+    font-size: 25px;
+    color: #fff; }
